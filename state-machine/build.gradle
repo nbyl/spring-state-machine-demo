@@ -1,4 +1,4 @@
 dependencies {
     compile("org.springframework.boot:spring-boot-starter:${springBootVersion}")
-    compile('org.springframework.statemachine:spring-statemachine-core:1.2.8.RELEASE')
+    compile('org.springframework.statemachine:spring-statemachine-zookeeper:1.2.10.RELEASE')
 }

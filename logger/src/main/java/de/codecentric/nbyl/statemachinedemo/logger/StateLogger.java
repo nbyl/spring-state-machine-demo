@@ -1,4 +1,4 @@
-package de.codecentric.nbyl.statemachinedemo.check;
+package de.codecentric.nbyl.statemachinedemo.logger;
 
 import de.codecentric.nbyl.statemachinedemo.model.CheckEvents;
 import de.codecentric.nbyl.statemachinedemo.model.CheckStatus;
@@ -18,6 +18,6 @@ public class StateLogger extends StateMachineListenerAdapter {
 
     @OnStateChanged
     public void checkStatusChanged(StateContext<CheckStatus, CheckEvents> stateContext) {
-        LOGGER.info("Changed state from [{}] to [{}]", stateContext.getSource().getId(), stateContext.getTarget().getId());
+        LOGGER.info("Changed state from [{}] to [{}]", stateContext.getSource(), stateContext.getTarget());
     }
 }

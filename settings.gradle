@@ -1,2 +1,3 @@
 include 'checker'
+include 'logger'
 include 'state-machine'

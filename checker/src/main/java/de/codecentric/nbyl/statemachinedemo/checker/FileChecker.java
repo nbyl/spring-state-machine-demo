@@ -29,7 +29,8 @@ public class FileChecker {
 
         LOGGER.info("Checking for file {}", file.getAbsolutePath());
 
-        stateMachine.sendEvent(
-                file.exists() ? CheckEvents.succeeded : CheckEvents.failed);
+        CheckEvents event = file.exists() ? CheckEvents.succeeded : CheckEvents.failed;
+        LOGGER.info("Sending event >{}<", event);
+        stateMachine.sendEvent(event);
     }
 }
