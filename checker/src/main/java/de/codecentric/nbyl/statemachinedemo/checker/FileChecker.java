@@ -1,5 +1,4 @@
-package de.codecentric.nbyl.statemachinedemo.check;
-
+package de.codecentric.nbyl.statemachinedemo.checker;
 
 import de.codecentric.nbyl.statemachinedemo.model.CheckEvents;
 import de.codecentric.nbyl.statemachinedemo.model.CheckStatus;

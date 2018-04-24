@@ -10,19 +10,14 @@ buildscript {
 	}
 }
 
-apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
+subprojects {
+	apply plugin: 'java'
+	apply plugin: "io.spring.dependency-management"
 
-sourceCompatibility = 1.8
+	sourceCompatibility = 1.8
 
-repositories {
-	mavenCentral()
+	repositories {
+		mavenCentral()
+	}
 }
 
-dependencies {
-	compile('org.springframework.boot:spring-boot-starter-actuator')
-	compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.springframework.boot:spring-boot-devtools')
-	compile('org.springframework.statemachine:spring-statemachine-core:1.2.8.RELEASE')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
-}

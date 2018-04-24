@@ -1,7 +1,5 @@
 package de.codecentric.nbyl.statemachinedemo.model;
 
-import com.fasterxml.jackson.annotation.JsonValue;
-
 public enum CheckStatus {
 
     Initializing(0),
@@ -15,7 +13,6 @@ public enum CheckStatus {
         this.value = value;
     }
 
-    @JsonValue
     public int getValue() {
         return value;
     }

@@ -2,8 +2,6 @@ package de.codecentric.nbyl.statemachinedemo.config;
 
 import de.codecentric.nbyl.statemachinedemo.model.CheckEvents;
 import de.codecentric.nbyl.statemachinedemo.model.CheckStatus;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.config.EnumStateMachineConfigurerAdapter;
@@ -16,8 +14,6 @@ import java.util.EnumSet;
 @Configuration
 @EnableStateMachine
 public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<CheckStatus, CheckEvents> {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(StateMachineConfig.class);
 
     @Override
     public void configure(StateMachineConfigurationConfigurer<CheckStatus, CheckEvents> config)
