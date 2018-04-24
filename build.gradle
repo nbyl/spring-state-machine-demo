@@ -1,23 +1,23 @@
 buildscript {
-	ext {
-		springBootVersion = '1.5.10.RELEASE'
-	}
-	repositories {
-		mavenCentral()
-	}
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+    ext {
+        springBootVersion = '1.5.10.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
 subprojects {
-	apply plugin: 'java'
-	apply plugin: "io.spring.dependency-management"
+    apply plugin: 'java'
+    apply plugin: "io.spring.dependency-management"
 
-	sourceCompatibility = 1.8
+    sourceCompatibility = 1.8
 
-	repositories {
-		mavenCentral()
-	}
+    repositories {
+        mavenCentral()
+    }
 }
 
